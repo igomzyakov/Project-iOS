@@ -96,3 +96,31 @@ print("Мой обед в понедельник - \(myLunch). ")
 specialLunch = "пирог с мясом"
 myLunch = specialLunch ?? defaultLunch
 print("Мой обед сегодня - \(myLunch).")
+
+
+
+func invite (guest: String) {
+print("Привет, \( guest),")
+print("Хочу пригласить тебя на мою вечеринку!")
+print("Она состоится в субботу у меня дома.")
+print("Надеюсь, ты сможешь прийти.")
+print("С любовью, Бренна\n")
+}
+
+invite(guest: "Игорь")
+
+func invite(allGuests: [String]) {
+    for guest in allGuests {
+     invite(guest: guest)
+}
+}
+
+let friends = ["Петя", "Вася", "Иван", "Мася", "Пася", "Саша"]
+invite(allGuests: friends
+)
+
+
+func function(_ x0 : Int, x1: Int, x2 : Int = 10) { print ( (x0 + x1 + x2) ) }
+
+
+
